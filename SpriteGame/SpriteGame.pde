@@ -18,6 +18,7 @@ void draw()
   
   // make the player move automatically.
   player.move();
+  player.keyboardControl();
   
   // draw the player on the screen.
   player.drawSprite();

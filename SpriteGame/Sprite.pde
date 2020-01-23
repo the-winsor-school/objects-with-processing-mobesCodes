@@ -101,19 +101,19 @@ abstract class Sprite
     // make sure we don't go out of bounds
     if(x < 0)
     { 
-      x += width;
+      dx*=-1;
     }
     if(x > width) 
     {
-      x -= width;
+      dx*=-1;
     }
     if(y < 0) 
     {
-      y += height;
+      dy*=-1;
     }
     if(y > height)
     {
-      y -= height;
+      dy*=-1;
     }
   }
   

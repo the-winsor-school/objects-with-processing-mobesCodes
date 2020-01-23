@@ -4,14 +4,14 @@
  * x, y, dx, and dy are all defined in the Sprite class and we get
  * all of those for free by using "extends Sprite"
  */
-class Blob extends Sprite
+class Blob extends Sprite //blob is a type of sprite
 {
   // Blobs have a Radius and a color
   int radius;
   color myColor;
   
   // Create a blob with default velocity.
-  Blob(int x, int y, int r, color c)
+  Blob(int x, int y, int r, color c) //constructor method, same name as class, has all the parameters
   {
     // super calls the Sprite(x, y) constructor method.
     super(x, y);
@@ -42,7 +42,6 @@ class Blob extends Sprite
     // because I don't want to rewrite all the code in the Sprite.move() method, I can call it here using "super"
     super.move();
   }
-  
   // This is the method that is /absolutely/ required.
   // this defines how to draw the Blob; it's just a circle...
   void drawSprite()
