@@ -27,23 +27,23 @@ class vector2 // name the class
   { //other is a vector 2
    return new vector2 (this.y, this.x);  
   }
-  vector2 changeScale(vector2, float s)
+  vector2 changeScale(vector2, float s) //takes a vector 2 and scale factor s and scales vector 2 to be s times as large 
   {
     return new vector2 (this.x*s, this.y*s); 
   }
-  vector2 makePerpendicular()
+  vector2 makePerpendicular() //takes x/y slope and does opposite reciprocal
   {
     return new vector2 (-1*this.y, this.x);
   }
 
-  vector2 getUnitVector()
+  vector2 getUnitVector() //uses pythagorean theorem 
   {
     float m = sqrt(this.x*this.x+this.y*this.y);
     return new vector(m, 0); 
   }
   float getAngle(vector2 other)
   {
-    tan(an)=this.x/this.y; 
+    tan(an)=this.x/this.y; //finds the angles of each and subtracts them 
     angleOne=an; 
     tan(ang)=other.x/other.y; 
     angleTwo=ang; 
